@@ -1,0 +1,611 @@
+/* required fonts */
+/* Reference: https://fonts.google.com/specimen/Inter */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+
+.inter-fontUseInter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.ms-madi-regular {
+  font-family: "Ms Madi";
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Universal CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #0e0e0e;
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 1) 23%,
+    rgba(29, 29, 29, 1) 35%,
+    rgba(41, 41, 41, 1) 48%,
+    rgba(47, 47, 47, 1) 55%,
+    rgba(36, 36, 36, 1) 66%,
+    rgba(20, 20, 20, 1) 75%
+  );
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --primary-orange: #e6533c;
+  --primary-font-white: #ffffff;
+  --primary-font-offWhite: #bababa;
+  --primary-font-paragraphPlaceholder: #808080;
+  --primary-font-tableRow: #838383;
+  --primary-font-footerAnchor: #8c8c8c;
+}
+
+/* HEADER CSS */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 18rem;
+}
+
+#navTitle a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e6533c;
+}
+
+#navLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  border: 0.4px solid #494949;
+  border-radius: 2.88rem;
+  padding: 0.5rem 0.1rem;
+  color: #ffffff;
+  font-size: 1.125;
+  font-weight: 600;
+  width: 33%;
+}
+
+#navLink li a {
+  color: var(--primary-font-white);
+  font-size: 1.125rem;
+  font-weight: 600;
+  /* width: 100%; */
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+}
+
+#navLink li a span {
+  border-radius: 2.88rem;
+  background: rgb(230, 83, 60);
+  display: inline-block;
+  width: 100%;
+}
+
+#navLink li a:hover {
+  cursor: pointer;
+  border-radius: 2.88rem;
+  background: rgb(230, 83, 60);
+  transition: 0.9s;
+  width: 100%;
+}
+
+/* Required BANNER CSS */
+#bannerSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 63vh;
+}
+#bannerTitle {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--primary-font-white);
+  margin-bottom: 2rem;
+}
+
+#bannerSpanH1 {
+  font-family: "Ms Madi";
+  font-weight: 100;
+  font-size: 4.8rem;
+}
+
+#bannerDesc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary-font-paragraphPlaceholder);
+  margin-bottom: 2rem;
+}
+
+#bannerClubBtn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-font-white);
+  background: var(--primary-orange);
+  padding: 0.5rem 1rem;
+  border: var(--primary-orange) 1px solid;
+  border-radius: 2.88rem;
+  margin-right: 1rem;
+}
+
+#bannerClubBtn:hover {
+  position-anchor: 0.5s;
+  cursor: pointer;
+  border-radius: 2.88rem;
+  background: #191919;
+  transition: 0.5s;
+  border: 1px solid #ffffff;
+}
+
+#bannerBtn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-font-white);
+  background: #191919;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 2.88rem;
+}
+
+#bannerBtn:hover {
+  cursor: pointer;
+  border: var(--primary-orange) 1px solid;
+  border-radius: 2.88rem;
+  background: var(--primary-orange);
+  transition: 0.5s;
+}
+
+#bannerSectionContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#videotutorial {
+  position: absolute;
+  top: 75%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  border: 0.06rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  backdrop-filter: blur(0.1rem);
+  background: rgba(48, 48, 48, 0.54);
+  box-shadow: 0px 0px 12px 0px #000000;
+}
+
+#orangeball {
+  width: 2rem;
+  height: 2rem;
+  background: var(--primary-orange);
+  border-radius: 50%;
+}
+
+#orangeball-title h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+}
+
+#orangeball-title p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary-font-offWhite);
+}
+
+#wrokoutVideos {
+  position: absolute;
+  top: 30%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  gap: 0.5rem;
+  box-sizing: border-box;
+  border: 0.06rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  backdrop-filter: blur(0.1rem);
+  background: rgba(48, 48, 48, 0.54);
+  box-shadow: 0px 0px 12px 0px #000000;
+}
+
+#wrokoutVideos h4 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+}
+
+#wrokoutVideos p {
+  font-size: 0.813rem;
+  font-weight: 400;
+  color: var(--primary-font-offWhite);
+}
+
+/* Required H3 CSS */
+#requiredH3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+  margin: 10rem 0rem 1rem 0rem;
+  text-align: center;
+}
+
+#requiredp {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-font-paragraphPlaceholder);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#habitCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0rem 10rem;
+}
+
+#habitCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 3rem;
+}
+
+#habitImg {
+  width: 11rem;
+  height: 11rem;
+  border: 0.2rem solid var(--primary-font-paragraphPlaceholder);
+  border-radius: 50%;
+}
+
+#habitImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#habitTxt {
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+#habitTxt h6 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-font-white);
+  margin-bottom: 0.5rem;
+}
+
+#habitTxt p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-font-paragraphPlaceholder);
+  margin-bottom: 0.5rem;
+}
+
+#joinClubSection {
+  display: flex;
+  background: #222222;
+  border-radius: 1.5rem;
+  margin: 5rem 27rem;
+  height: 20rem;
+}
+
+#joinClubTitle {
+  margin: 1.5rem 1rem 1.5rem 3rem;
+}
+
+#joinClubH3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+}
+
+#joinClubP {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-font-paragraphPlaceholder);
+  margin: 1rem 0rem 3rem 0rem;
+}
+
+#joinClubBtn {
+  background: var(--primary-orange);
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-font-white);
+  border: 0;
+}
+
+#joinClubBtn:hover {
+  background: var(--primary-font-white);
+  color: var(--primary-orange);
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.9s;
+}
+
+#joinClubImg {
+  margin: 2rem 1rem 2rem 15rem;
+  width: 18rem;
+  height: 16rem;
+  border-radius: 1.5rem;
+  background-image: url(../assets/run.jpg);
+  background-size: auto 40rem;
+  background-position: 68% 29%;
+}
+
+#trainingsTitle{
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+  margin: 8rem 27rem 1rem 27rem;
+}
+
+#trainingsDesc{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-font-paragraphPlaceholder);
+  margin: 1rem 0rem 2rem 27rem;
+}
+
+#galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0rem 27rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+
+}
+
+#imgOne, #imgTwo, #imgThree, #imgFour, #imgFive, #imgSix {
+  position: relative;
+}
+
+/* #imgOne > img:hover{
+  filter: drop-shadow(0 0 3rem #06FFD2) brightness(0.9) contrast(1.5) opacity(0.5);
+} */
+
+#imgTwo{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+#imgFour{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#imgOne > p {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+}
+#imgTwo > p {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+}
+#imgThree > p {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+}
+#imgFour > p {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: white;
+}
+#imgFive > p {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+}
+#imgSix > p {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+}
+
+#bmi{
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+  margin: 4rem 0rem 0rem 40rem;
+}
+
+#bmiDesc{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-font-paragraphPlaceholder);
+  margin: 0rem 0rem 5rem 40rem;
+}
+
+#calSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #222222;
+  padding: 2rem 25rem 2rem 25rem;
+}
+
+#calTitle{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+  margin-bottom: 4rem;
+}
+
+#calTableHead td{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary-font-white);
+  border: 0.2rem solid #444444;
+  padding: 1rem;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+#tableBody td{
+  border: 0.2rem solid #444444;
+  padding: 1rem;
+  color: #a3a3a3;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+#calFTitle{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary-font-white);
+  margin-bottom: 0.3rem;
+}
+
+#calpDesc{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-font-offWhite);
+  margin-bottom: 1rem;
+}
+
+#calForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem 1rem;
+}
+
+#selector{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #444444;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-font-paragraphPlaceholder);
+  border-radius: 0.5rem;
+  border: none;
+}
+
+#selectorsex{
+  background-color: #444444;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  color: var(--primary-font-paragraphPlaceholder);
+  border: none;
+}
+
+#calForm > input{
+  background-color: #444444;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border: none;
+}
+
+#calForm > input::placeholder{
+  color: var(--primary-font-paragraphPlaceholder);
+}
+
+#calBtn{
+  background-color: var(--primary-orange);
+  border-radius: 1.5rem;
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-font-white);
+  border: none;
+}
+
+#teamGallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0rem 27rem;
+  gap: 1rem 1rem;
+  background-color: #222222;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#teamGallery > img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 1.5rem;
+}
+
+#contactContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin: 2rem 27rem;
+  gap: 1rem 1rem;
+  background-color: #444444;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,21 @@
+ <!-- required meta tags -->
+    <meta name="description" content="Fitness" />
+    <meta name="keywords" content="Fitness" />
+    <meta name="author" content="Fitness" />
+
+    <!-- required meta tags -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+    <!-- required meta tags -->
+    <meta property="og:title" content="Fitness" />
+    <meta property="og:description" content="Fitness" />
+    <meta property="og:image" content="https://www.abc.com" />
+    <meta property="og:url" content="https://www.abc.com" />
+
+    <!-- required meta tags -->
+    <meta name="twitter:title" content="Fitness" />
+    <meta name="twitter:description" content="Fitness" />
+    <meta name="twitter:image" content="https://www.abc.com" />
+    <meta name="twitter:card" content="summary" />
